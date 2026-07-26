@@ -150,7 +150,7 @@ fbq('track', 'PageView');
       isNavigating = true;
 
       if (typeof fbq === "function") {
-        try { fbq("track", "Subscribe"); } catch (err) {}
+        try { fbq("track", "Lead"); } catch (err) {}
       }
 
       setTimeout(() => { window.location.href = telegramLink; }, 120);
